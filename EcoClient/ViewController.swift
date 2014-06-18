@@ -9,7 +9,7 @@
 import UIKit
 
 
-let baseURL = "http://spmbp.local:8080"
+let baseURL = "http://eco.bugman.me"
 let postURL = baseURL + "/api/post"
 let eventsURL = baseURL + "/api/events"
 
