@@ -7,4 +7,4 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
-#import <EventSource/EventSource.h>
+#import <TRVSEventSource/TRVSEventSource.h>

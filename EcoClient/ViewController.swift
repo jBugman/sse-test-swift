@@ -19,7 +19,7 @@ let clientColor = "#000000"
 class APIClient {
     
     let manager = AFHTTPRequestOperationManager()
-    let eventSource = EventSource(URL: NSURL(string: eventsURL))
+    let eventSource = TRVSEventSource(URL: NSURL(string: eventsURL))
     
     let delegate: MessageLogger?
     
@@ -28,17 +28,21 @@ class APIClient {
         
         println("API init")
         
-        eventSource.addEventListener("message", handler: { (event: Event!) in
+        eventSource.addListenerForEvent("message", usingEventHandler: { (event: TRVSServerSentEvent!, error: NSError!) in
             println(event)
             let text = self.textFromEvent(event.data)
             self.delegate?.logMessage(text)
         })
+        eventSource.open()
     }
     
-    func textFromEvent(eventText: String) -> String {
-        let jsonData = eventText.dataUsingEncoding(NSUTF8StringEncoding)
-        let eventData = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
-        return eventData["text"] as String
+    func textFromEvent(eventData: NSData) -> String {
+        let eventObject = self.eventObjectFromData(eventData)
+        return eventObject["text"] as String
+    }
+
+    func eventObjectFromData(data: NSData) -> NSDictionary {
+        return NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
     }
     
     func post(text: String) {
