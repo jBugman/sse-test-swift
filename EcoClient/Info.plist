@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Eco</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -28,5 +30,7 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array/>
 </dict>
 </plist>
