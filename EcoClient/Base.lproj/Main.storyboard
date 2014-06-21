@@ -56,6 +56,7 @@
                             <constraint firstItem="qVd-uL-Wat" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pjx-Rg-wgG"/>
                             <constraint firstItem="ROG-Fl-Qzp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vYz-UF-fWU"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="aJd-uP-fwJ"/>
