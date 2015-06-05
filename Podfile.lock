@@ -20,17 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.3.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - EventSource (1.0.0)
+  - TPKeyboardAvoiding (1.2.3)
   - TRVSEventSource (0.0.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.3)
-  - EventSource (~> 1.0)
+  - TPKeyboardAvoiding (~> 1.2.3)
   - TRVSEventSource (~> 0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
-  EventSource: 71adac2231cb299a42c0fc63c16df320cec98925
+  TPKeyboardAvoiding: ca26afa683d829cb96fe69b887fc8be4178f0b9a
   TRVSEventSource: 34c96950c91b73aedcb090df5abf92e114bb6633
 
 COCOAPODS: 0.33.1

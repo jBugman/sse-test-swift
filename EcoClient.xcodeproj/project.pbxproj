@@ -14,23 +14,6 @@
 		F3F7B08C1952392900ECA6AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F7B08B1952392900ECA6AF /* libPods.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F3E0D2541955E12100B7F191 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3F7B04C195223E300ECA6AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3F7B053195223E300ECA6AF;
-			remoteInfo = EcoClient;
-		};
-		F3F7B067195223E400ECA6AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3F7B04C195223E300ECA6AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3F7B053195223E300ECA6AF;
-			remoteInfo = EcoClient;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1760028104734E38B550399C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A762FBF7C6ED4301BE6EC003 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +23,6 @@
 		F3F7B05B195223E300ECA6AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3F7B05E195223E400ECA6AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3F7B060195223E400ECA6AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F3F7B066195223E400ECA6AF /* EcoClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F7B0761952311300ECA6AF /* EcoClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EcoClient-Bridging-Header.h"; sourceTree = "<group>"; };
 		F3F7B077195231DE00ECA6AF /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		F3F7B08B1952392900ECA6AF /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
@@ -52,13 +34,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F7B08C1952392900ECA6AF /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3F7B063195223E400ECA6AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				F3F7B054195223E300ECA6AF /* EcoClient.app */,
-				F3F7B066195223E400ECA6AF /* EcoClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,25 +111,6 @@
 			productReference = F3F7B054195223E300ECA6AF /* EcoClient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3F7B065195223E400ECA6AF /* EcoClientTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3F7B073195223E400ECA6AF /* Build configuration list for PBXNativeTarget "EcoClientTests" */;
-			buildPhases = (
-				F3F7B062195223E400ECA6AF /* Sources */,
-				F3F7B063195223E400ECA6AF /* Frameworks */,
-				F3F7B064195223E400ECA6AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3F7B068195223E400ECA6AF /* PBXTargetDependency */,
-				F3E0D2551955E12100B7F191 /* PBXTargetDependency */,
-			);
-			name = EcoClientTests;
-			productName = EcoClientTests;
-			productReference = F3F7B066195223E400ECA6AF /* EcoClientTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +123,6 @@
 					F3F7B053195223E300ECA6AF = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = WM25Q27BU6;
-					};
-					F3F7B065195223E400ECA6AF = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = F3F7B053195223E300ECA6AF;
 					};
 				};
 			};
@@ -189,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				F3F7B053195223E300ECA6AF /* EcoClient */,
-				F3F7B065195223E400ECA6AF /* EcoClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,13 +151,6 @@
 			files = (
 				F3F7B05F195223E400ECA6AF /* Main.storyboard in Resources */,
 				F3F7B061195223E400ECA6AF /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3F7B064195223E400ECA6AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,27 +199,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3F7B062195223E400ECA6AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F3E0D2551955E12100B7F191 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3F7B053195223E300ECA6AF /* EcoClient */;
-			targetProxy = F3E0D2541955E12100B7F191 /* PBXContainerItemProxy */;
-		};
-		F3F7B068195223E400ECA6AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3F7B053195223E300ECA6AF /* EcoClient */;
-			targetProxy = F3F7B067195223E400ECA6AF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F3F7B05D195223E400ECA6AF /* Main.storyboard */ = {
@@ -324,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -361,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -387,6 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EcoClient/EcoClient-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -408,42 +332,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EcoClient/EcoClient-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		F3F7B074195223E400ECA6AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EcoClient.app/EcoClient";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EcoClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		F3F7B075195223E400ECA6AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EcoClient.app/EcoClient";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EcoClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -464,15 +353,6 @@
 			buildConfigurations = (
 				F3F7B071195223E400ECA6AF /* Debug */,
 				F3F7B072195223E400ECA6AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3F7B073195223E400ECA6AF /* Build configuration list for PBXNativeTarget "EcoClientTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3F7B074195223E400ECA6AF /* Debug */,
-				F3F7B075195223E400ECA6AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

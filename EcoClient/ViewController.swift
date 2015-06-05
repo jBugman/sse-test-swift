@@ -70,28 +70,29 @@ protocol MessageLogger {
 }
 
 
-class ViewController: UIViewController, MessageLogger {
+class ViewController: UIViewController, MessageLogger, UITextFieldDelegate {
     
-    @IBOutlet var messageInput : UITextField
-    @IBOutlet var messageLog : UITextView
+    @IBOutlet var messageInput : UITextField?
+    @IBOutlet var messageLog : UITextView?
+    @IBOutlet var scrollView : UIScrollView?
     
-    var messages : String[] = []
+    var messages : [String] = []
     
     let client: APIClient?
     
     @IBAction func send() {
         println("send")
         
-        let newMessage = messageInput.text
+        let newMessage = messageInput?.text
         
-        client?.post(newMessage)
+        client?.post(newMessage!)
         
-        messageInput.text = ""
+        messageInput?.text = ""
     }
     
     func logMessage(text: String) {
-        messages += text
-        messageLog.text = messagesText
+        messages.append(text)
+        messageLog?.text = messagesText
     }
     
     var messagesText: String {
@@ -100,10 +101,19 @@ class ViewController: UIViewController, MessageLogger {
         }
     }
     
-    init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.client = APIClient(delegate: self)
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField!) {
+        let scrollPoint = CGPointMake(0, textField.frame.origin.y)
+        self.scrollView?.setContentOffset(scrollPoint, animated: true)
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField!) {
+        self.scrollView?.setContentOffset(CGPointZero, animated: true)
     }
 
 }
